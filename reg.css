@@ -1,0 +1,23 @@
+.login
+{
+	color:brown; 
+	background-color:transparent;
+	border-color: black;
+	font-size: 20;
+}
+h2{
+	font-family: "purisa";
+	color: red;
+	font-size: 48;
+}
+h4{
+	color:darkblue;
+	font-size: 32;
+}
+a{
+	font-size: 18;
+	color:red;
+}
+input{
+	border-color: black;
+}

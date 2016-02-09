@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<link rel="stylesheet" type="text/css" href="css/regis.css">
+<script type="text/javascript" src="js/register.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<title>Login and Register Form</title>
+</head>
+<body style="background: url('images/back6.jpg') no-repeat; background-size: cover;" ng-app="registerlog" ng-controller="register">
+<div ng-controller="RegisterController" >
+<center>
+<form name="appForm" >
+<h2>Registration</h2>
+<br>
+<br>
+<h4>FirstName:
+<input type="text" placeholder="firstname" ng-model="user.firstname" required></h4>
+<h4>LastName:
+<input type="text" placeholder="lastname" ng-model="user.lastname" required>
+</h4>
+<h4>Email ID:
+<input type="email" ng-model="emailid" required>
+</h4>
+<h4>
+Password:
+<input type="password" ng-model="password"required>
+</h4>
+<h4>Confirm password:
+<input type="password" ng-model="reenterpass" required pw-check="password">
+<br>
+</h4>
+<button ng-click="update(user)" class="register">REGISTER</button>
+<a href="login.html">CANCEL</a>
+</form>
+</center>
+</div>
+</body>
+</html>
